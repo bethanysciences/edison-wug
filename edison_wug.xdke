@@ -1,0 +1,194 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1488136292000,
+        "modified": 1488136292000,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "edison_wug.xdk": {
+        "previousModTime": 1488136294000,
+        "modified": 1488136294000,
+        "seen": true,
+        "name": "edison_wug.xdk"
+      },
+      "edison_wug.xdke": {
+        "previousModTime": 1489951761000,
+        "modified": 1489951761000,
+        "seen": true,
+        "name": "edison_wug.xdke"
+      },
+      "icon.png": {
+        "previousModTime": 1487646972000,
+        "modified": 1487646972000,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "license.md": {
+        "previousModTime": 1487646972000,
+        "modified": 1487646972000,
+        "seen": true,
+        "name": "license.md"
+      },
+      "main.js": {
+        "previousModTime": 1489948976000,
+        "modified": 1489948976000,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1489951813000,
+        "modified": 1489951813000,
+        "seen": true,
+        "name": "package.json"
+      },
+      "readme.md": {
+        "previousModTime": 1488169929000,
+        "modified": 1488169929000,
+        "seen": true,
+        "name": "readme.md"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1488136293000,
+        "modified": 1488136293000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "datasheets/7segclick.pdf": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "datasheets/7segclick.pdf"
+      },
+      "datasheets/BSS138.pdf": {
+        "previousModTime": 1488131889000,
+        "modified": 1488131889000,
+        "seen": true,
+        "name": "datasheets/BSS138.pdf"
+      },
+      "datasheets/edison.pdf": {
+        "previousModTime": 1488169929000,
+        "modified": 1488169929000,
+        "seen": true,
+        "name": "datasheets/edison.pdf"
+      },
+      "img/edison-architecture.png": {
+        "previousModTime": 1488169929000,
+        "modified": 1488169929000,
+        "seen": true,
+        "name": "img/edison-architecture.png"
+      },
+      "img/edison.png": {
+        "previousModTime": 1487646972000,
+        "modified": 1487646972000,
+        "seen": true,
+        "name": "img/edison.png"
+      },
+      "img/edisonbreakout.png": {
+        "previousModTime": 1488169929000,
+        "modified": 1488169929000,
+        "seen": true,
+        "name": "img/edisonbreakout.png"
+      },
+      "img/intelxdk.png": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/intelxdk.png"
+      },
+      "img/johnnyfive.png": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/johnnyfive.png"
+      },
+      "img/nodejs.png": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/nodejs.png"
+      },
+      "img/sensortag-back.jpg": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/sensortag-back.jpg"
+      },
+      "img/sensortag-buttons.jpg": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/sensortag-buttons.jpg"
+      },
+      "img/sensortag-front.png": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "img/sensortag-front.png"
+      },
+      "datasheets/PCF8574.pdf": {
+        "previousModTime": 1489948661000,
+        "modified": 1489948661000,
+        "seen": true,
+        "name": "datasheets/PCF8574.pdf"
+      },
+      "datasheets/Sure-Display-DE-DP002.pdf": {
+        "previousModTime": 1483394004000,
+        "modified": 1483394004000,
+        "seen": true,
+        "name": "datasheets/Sure-Display-DE-DP002.pdf"
+      },
+      "datasheets/adafruit-HT16K33-backpack.pdf": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "datasheets/adafruit-HT16K33-backpack.pdf"
+      },
+      "datasheets/edison-compute-module.pdf": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "datasheets/edison-compute-module.pdf"
+      },
+      "datasheets/edison-mini-breakout.pdf": {
+        "previousModTime": 1488166096000,
+        "modified": 1488166096000,
+        "seen": true,
+        "name": "datasheets/edison-mini-breakout.pdf"
+      },
+      "doc/wiring-diagram.pdf": {
+        "previousModTime": 1488035051000,
+        "modified": 1488035051000,
+        "seen": true,
+        "name": "doc/wiring-diagram.pdf"
+      },
+      "doc/wiring-diagram.png": {
+        "previousModTime": 1488155716000,
+        "modified": 1488155716000,
+        "seen": true,
+        "name": "doc/wiring-diagram.png"
+      },
+      "img/edison-wug.jpg": {
+        "previousModTime": 1488169929000,
+        "modified": 1488169929000,
+        "seen": true,
+        "name": "img/edison-wug.jpg"
+      }
+    },
+    "boardFileStatus": {
+      "package.json": {
+        "previousModTime": 1489951825229
+      }
+    }
+  }
+}
