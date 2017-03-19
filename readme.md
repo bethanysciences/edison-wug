@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://github.com/markdowncss/modest/blob/master/css/air.css"></link>  
 # 7-Segment LED Clock and Weather Display  
-<img src="img/edison_wug.jpg" width="50%">  
+<img src="img/edison-wug.jpg" width="50%">  
   
 ## Programmed with  
 [<img src="img/nodejs.png" width="10%">](https://nodejs.org/en/)  
@@ -8,9 +8,9 @@
 [<img src="img/intelxdk.png" width="10%">](https://software.intel.com/en-us/intel-xdk)  
   
 ## Hardware  
-[Intel Edison Compute Module](datasheets/Intel Edison Compute Module.pdf)  
+[Intel Edison Compute Module](datasheets/Intel-Edison-Compute-Module.pdf)  
   
-[Intel Mini-Breakout Board](datasheets/Intel Edison Mini Breakout.pdf)  <img src="img/edisonbreakout.png" width="20%">  
+[Intel Mini-Breakout Board](datasheets/Intel-Edison-Mini-Breakout.pdf)  <img src="img/edison-breakout.png" width="20%">  
 
 [Texas Instruments SensorTag](http://www.ti.com/ww/en/wireless_connectivity/sensortag2015/?INTC=SensorTag&HQS=sensortag)  
 <img src="img/sensortag-back.jpg" width="50%">  
@@ -48,7 +48,7 @@
 
 Wiring Diagram [PDF](doc/wiringdiagram.pdf)  
 
-<img src="doc/wiringdiagram.png" width="80%">  
+<img src="doc/wiring-diagram.png" width="80%">  
 
 ## Useful links
 [Intel Edison Wiki](https://github.com/bethanysciences/Intel-Edison/wiki/setup)  
