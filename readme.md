@@ -3,9 +3,9 @@
 <img src="img/edison-wug.jpg" width="50%">  
   
 ## Programmed with  
-[<img src="img/nodejs.png" width="10%">](https://nodejs.org/en/)  
-[<img src="img/johnnyfive.png" width="10%">](http://johnny-five.io/)  
-[<img src="img/intelxdk.png" width="10%">](https://software.intel.com/en-us/intel-xdk)  
+[<img src="img/node-js.png" width="10%">](https://nodejs.org/en/)  
+[<img src="img/johnny-five.png" width="10%">](http://johnny-five.io/)  
+[<img src="img/intel-xdk.png" width="10%">](https://software.intel.com/en-us/intel-xdk)  
   
 ## Hardware  
 [Intel Edison Compute Module](datasheets/Intel-Edison-Compute-Module.pdf)  
@@ -36,17 +36,17 @@
 |     |        |                |Cond Disp |[Red 1.2" HT16K33 8x16 Matrix Disp](https://www.adafruit.com/product/2037)|  
 |     |        |                |Wind Dir  |[Super Bright Green 5mm LED x16](https://www.adafruit.com/product/300)    |  
 |GPIO |DATA    |J18-2 GP165     |Clock Disp|[Sure Electronics DE-DP002](http://www.ebay.com/itm/160882858719)         |  
-|     |CLOCK   |J20-7 GP15      |          |[Datasheet](datasheets/Sure Display DE-DP002.pdf)                                                                          |  
+|     |CLOCK   |J20-7 GP15      |          |[Datasheet](datasheets/Sure-Display-DE-DP002.pdf)                                                                          |  
 |     |DIMM    |J17-1 GP182_PWM2|          |                                                                          |  
 |GPIO |DATA    |J19-13 GPx      |Wind Speed|[MikroElektronika 7-seg disp](https://shop.mikroe.com/click/display/7seg) |  
-|     |CLOCK   |J19-14 GPx      |          |[Datasheet](datasheets/7segclick.pdf)                                     |  
+|     |CLOCK   |J19-14 GPx      |          |[Datasheet](datasheets/7seg-click.pdf)                                     |  
  
 [Adafruit HT16K33 I2C Backpack Datasheet](datasheets/adafruitHT16K33backpack.pdf)  
 [Adafruit 4-ch Logic Level Converter (BSS138 FETs w/ 10K pullups](https://www.adafruit.com/products/757)  
 [BSS138 FET Datasheet](datasheets/BSS138.pdf)
 [Adafruit 12 VDC 1000mA regulated switching power adapter - UL listed](https://www.adafruit.com/product/798)  
 
-Wiring Diagram [PDF](doc/wiringdiagram.pdf)  
+Wiring Diagram [PDF](doc/wiring-diagram.pdf)  
 
 <img src="doc/wiring-diagram.png" width="80%">  
 
