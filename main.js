@@ -28,12 +28,13 @@ app.use('/logs', scribe.webPanel());
 app.listen(8080);
 console.time().tag('main').log('log at http://radical.local:8080/logs');
 
-var led, temp, low, high, conds;
-var digit = [0x7e, 0x0c, 0xb6, 0x9e, 0xcc, 0xda, 0xfa, 0x0e, 0xfe, 0xde, 0x00];
+var clock, wind, temp, low, high, conds;
+var clockseg = [0x7e, 0x0c, 0xb6, 0x9e, 0xcc, 0xda, 0xfa, 0x0e, 0xfe, 0xde, 0x00];
+var windseg =  [0x7E, 0x0A, 0xB6, 0x9E, 0xCA, 0xDC, 0xFC, 0x0E, 0xFE, 0xDE]; // 0-9
 
 board.on("ready", function () {
-    led = new five.ShiftRegister(["J18-2", "J20-7", "J17-1"]);
-    //  wind = new five.ShiftRegister ([ "J18-2", "J20-7", "J17-1"]);
+    clock = new five.ShiftRegister(["J18-2",  "J20-7",  "J17-1"]);
+    wind = new five.ShiftRegister (["J19-12", "J19-13", "J19-14"]); // dta clk lat
     temp = new five.Led.Digits({
         addresses: [0x71],
         controller: "HT16K33",
@@ -77,10 +78,10 @@ function HourTick() {
 
 function clckdspy() {
     board.digitalWrite(0, 1);
-    led.send(digit[moment().minutes() % 10],
-        digit[parseInt(moment().minutes() / 10)],
-        digit[moment().hours() % 10],
-        digit[parseInt(moment().hours() / 10)]
+    clock.send(clockseg[moment().minutes() % 10],
+        clockseg[parseInt(moment().minutes() / 10)],
+        clockseg[moment().hours() % 10],
+        clockseg[parseInt(moment().hours() / 10)]
     );
     board.digitalWrite(0, 0);
 }

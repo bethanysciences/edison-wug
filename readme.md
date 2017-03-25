@@ -31,16 +31,17 @@
 |     |3.3v    |J20-2 V_V3P30   |          |         |  
 |     |1.8v    |J19-2 V_V1P80   |          |         |  
 |I2C  |I2C1_SCL|J17-6           |Curr Temp |[Blu 0.56" HT16K33 4-Dig 7-Seg Disp](https://www.adafruit.com/product/881)|  
-|     |I2C1_SDA|J17-8           |High Temp |[Yel 0.56" HT16K33 4-Dig 7-Seg Disp](https://www.adafruit.com/product/879)|  
-|     |        |                |Low Temp  |[Blu 0.56" HT16K33 4-Dig 7-Seg Disp](https://www.adafruit.com/product/881)|  
-|     |        |                |Cond Disp |[Red 1.2" HT16K33 8x16 Matrix Disp](https://www.adafruit.com/product/2037)|  
-|     |        |                |Wind Dir  |[Super Bright Green 5mm LED x16](https://www.adafruit.com/product/300)    |  
-|GPIO |DATA    |J18-2 GP165     |Clock Disp|[Sure Electronics DE-DP002](http://www.ebay.com/itm/160882858719)         |  
-|     |CLOCK   |J20-7 GP15      |          |[Datasheet](datasheets/Sure-Display-DE-DP002.pdf)                                                                          |  
-|     |DIMM    |J17-1 GP182_PWM2|          |                                                                          |  
-|GPIO |DATA    |J19-13 GPx      |Wind Speed|[MikroElektronika 7-seg disp](https://shop.mikroe.com/click/display/7seg) |  
-|     |CLOCK   |J19-14 GPx      |          |[Datasheet](datasheets/7seg-click.pdf)                                     |  
- 
+|I2C  |I2C1_SDA|J17-8           |High Temp |[Yel 0.56" HT16K33 4-Dig 7-Seg Disp](https://www.adafruit.com/product/879)|  
+|I2C  |        |                |Low Temp  |[Blu 0.56" HT16K33 4-Dig 7-Seg Disp](https://www.adafruit.com/product/881)|  
+|I2C  |        |                |Conditions|[Red 1.2" HT16K33 8x16 Matrix Disp](https://www.adafruit.com/product/2037)|  
+|I2C  |        |                |Wind Dir  |[Super Bright Green 5mm LED x16](https://www.adafruit.com/product/300)    |  
+|GPIO |DATA    |J18-2 GP165     |Clock     |[Sure Electronics DE-DP002](http://www.ebay.com/itm/160882858719)         |  
+|     |CLOCK   |J20-7 GP15      |          |[Datasheet](datasheets/Sure-Display-DE-DP002.pdf)                         |  
+|     |DIMM    |J17-1 GP182_PWM2|          |         |  
+|GPIO |DTA     |J19-12 GP77     |Wind Speed|[MikroElektronika 7-seg disp](https://shop.mikroe.com/click/display/7seg) |  
+|     |CLK     |J19-13 GP82     |          |[Datasheet](datasheets/7seg-click.pdf)                                    |  
+|     |LAT     |J19-14 GP83     |          |         |  
+  
 [Adafruit HT16K33 I2C Backpack Datasheet](datasheets/adafruitHT16K33backpack.pdf)  
 [Adafruit 4-ch Logic Level Converter (BSS138 FETs w/ 10K pullups](https://www.adafruit.com/products/757)  
 [BSS138 FET Datasheet](datasheets/BSS138.pdf)
