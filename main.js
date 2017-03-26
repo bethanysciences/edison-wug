@@ -1,9 +1,9 @@
 /* jslint node:true */
 "use strict";
 var scribe = require('scribe-js')(),
-    console = process.console,
-    express = require('express'),
-    app = express();
+var console = process.console,
+var express = require('express'),
+var app = express();
 var fs = require('fs');
 var wugkey = fs.readFileSync('/home/wugapikey');
 var five = require("johnny-five");
@@ -78,10 +78,10 @@ function HourTick() {
 
 function clckdspy() {
     board.digitalWrite(0, 1);
-    clock.send(clockseg[moment().minutes() % 10],
-        clockseg[parseInt(moment().minutes() / 10)],
-        clockseg[moment().hours() % 10],
-        clockseg[parseInt(moment().hours() / 10)]
+    		clock.send(clockseg[moment().minutes() % 10],
+        					 clockseg[parseInt(moment().minutes() / 10)],
+        				   clockseg[moment().hours() % 10],
+                   clockseg[parseInt(moment().hours() / 10)]
     );
     board.digitalWrite(0, 0);
 }
