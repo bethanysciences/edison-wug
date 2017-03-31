@@ -23,8 +23,8 @@
         "name": "edison-wug.xdk"
       },
       "edison-wug.xdke": {
-        "previousModTime": 1490743019000,
-        "modified": 1490743019000,
+        "previousModTime": 1490929612000,
+        "modified": 1490929612000,
         "seen": true,
         "name": "edison-wug.xdke"
       },
@@ -41,8 +41,8 @@
         "name": "license.md"
       },
       "main.js": {
-        "previousModTime": 1490742828000,
-        "modified": 1490742828000,
+        "previousModTime": 1490929642000,
+        "modified": 1490929642000,
         "seen": true,
         "name": "main.js"
       },
@@ -257,6 +257,10 @@
         "name": "xdk/project-info.json"
       }
     },
-    "boardFileStatus": {}
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1490929643215
+      }
+    }
   }
 }
