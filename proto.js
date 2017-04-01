@@ -1,62 +1,60 @@
 /* jslint node:true */
 "use strict";
-var scribe = require('scribe-js')();
-var console = process.console;
-var express = require('express');
-var app = express();
-var fs = require('fs');
-var wugkey = fs.readFileSync('/home/wugapikey');
 var five = require("johnny-five");
 var Edison = require("edison-io");
 var board = new five.Board({ io: new Edison() });
-var board = new Edison({ i2c: { bus: 1 } });
 var moment = require("moment");
-var Wunderground = require('wunderground-api');
-var client = new Wunderground(wugkey);
-var opts = { city: 'PDK', state: 'GA' };
 
-app.use('/logs', scribe.webPanel());
-app.listen(8080);
-console.time().tag('main').log('log at http://radical.local:8080/logs');
-
-var temp, low, high, conds;
-var wind, dir;
+var wind;
 var windspd = [0x7E, 0x0A, 0xB6, 0x9E, 0xCA, 0xDC, 0xFC, 0x0E, 0xFE, 0xDE];
 var winddir = [0x40, 0x02, 0x60, 0x20, 0x10, 0x08, 0x04, 0x01];
-var clock;
-var clockseg = [0x7e, 0x0c, 0xb6, 0x9e, 0xcc, 0xda, 0xfa, 0x0e, 0xfe, 0xde, 0x00];
+var i = 0;
 
 board.on("ready", function () {
-    clock = new five.ShiftRegister(["J18-2",  "J20-7",  "J17-1"]);
     wind = new five.ShiftRegister({ size: 3, 
-                                    pins: { data: "J18-1", clock: "J18-7", latch: "J18-8", reset: "J17-5" }
-    });
-    temp = new five.Led.Digits({ addresses: [0x71], controller: "HT16K33", });
-    low = new five.Led.Digits({ addresses: [0x72], controller: "HT16K33", });
-    high = new five.Led.Digits({ addresses: [0x77], controller: "HT16K33", });
-    conds = new five.Led.Matrix({ addresses: [0x70], controller: "HT16K33", dims: "8x16", rotation: 2 });
-    clckdspy();
-    fetchWUG();
+                                   pins: { data: "J18-1", clock: "J18-7", latch: "J18-8", reset: "J17-5" }
+                                  });
+    // wind.send(winddir[0x00], windspd[0], windspd[0]);
+    wind.send(winddir[0x10], windspd[5], windspd[2]);
 });
 
-setInterval(MinuteTick, 1000);
-setInterval(HourTick, 1000);
 
-function MinuteTick() {
-    var now = new Date().getMinutes();
-    if (now > MinuteTick.prevTime) { clckdspy(); }
-    MinuteTick.prevTime = now;
-}
+/*
+    var value = 0;
+    var fdirection = "East";
+    if (fdirection == "East")          {dir = [0x20];}
+    else if (fdirection == "ENE")      {dir = [0x30];}
+    else if (fdirection == "ESE")      {dir = [0x18];}
+    else if (fdirection == "NE")       {dir = [0x40];}
+    else if (fdirection == "NW")       {dir = [0x02];}
+    else if (fdirection == "NNE")      {dir = [0xc0];}
+    else if (fdirection == "NNW")      {dir = [0x81];}
+    else if (fdirection == "North")    {dir = [0x80];}
+    else if (fdirection == "SE")       {dir = [0x10];}
+    else if (fdirection == "South")    {dir = [0x08];}
+    else if (fdirection == "SSE")      {dir = [0x18];}
+    else if (fdirection == "SSW")      {dir = [0x0c];}
+    else if (fdirection == "SW")       {dir = [0x04];}
+    else if (fdirection == "Variable") {dir = [0x00];}
+    else if (fdirection == "West")     {dir = [0x02];}
+    else if (fdirection == "WNW")      {dir = [0x03];}
+    else if (fdirection == "WSW")      {dir = [0x06];}                  
 
-function HourTick() {
-    var now = new Date().getHours();
-    if (now > HourTick.prevTime) { fetchWUG(); }
-    HourTick.prevTime = now;
-}
+    //          0  1   2   3  4   5  6  7  
+    var dir = [96, 64, 1, 32, 16, 2, 4, 0];
+           
+    setInterval(function() {
+        // wind.send(0x00, 0x00, 0x00);
+        wind.send(dir[i], windspd[i], windspd[i]);
+        console.log(" i " + i + " | value " + dir[i]);
+        if (i < 7) i++;
+        else i = 0;
+    }, 1000);
+});
+*/
 
-function clckdspy() {
-    board.digitalWrite(0, 1);
-    	clock.send( clockseg[moment().minutes() % 10],
+
+t().minutes() % 10],
                     clockseg[parseInt(moment().minutes() / 10)],
                     clockseg[moment().hours() % 10],
                     clockseg[parseInt(moment().hours() / 10)]
@@ -89,7 +87,7 @@ function fetchWUG() {
             else if (fdirection == "WSW")      {dir = [0x06];}   // [00000110]
     
             wind.send(
-                winddir[6],
+                winddir[2],
                 windspd[now.wind_mph%10], 
                 windspd[parseInt(now.wind_mph/10)]
             );

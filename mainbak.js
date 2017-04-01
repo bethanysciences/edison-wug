@@ -22,6 +22,7 @@ console.time().tag('main').log('log at http://radical.local:8080/logs');
 var temp, low, high, conds;
 var wind, dir;
 var windspd =  [0x7E, 0x0A, 0xB6, 0x9E, 0xCA, 0xDC, 0xFC, 0x0E, 0xFE, 0xDE];
+var winddir = [0x40, 0x02, 0x60, 0x20, 0x10, 0x08, 0x04, 0x01];
 var clock;
 var clockseg = [0x7e, 0x0c, 0xb6, 0x9e, 0xcc, 0xda, 0xfa, 0x0e, 0xfe, 0xde, 0x00];
 
@@ -88,9 +89,9 @@ function fetchWUG() {
             else if (fdirection == "WSW")      {dir = [0x06];}   // [00000110]
     
             wind.send(
+                winddir[2],
                 windspd[now.wind_mph%10], 
                 windspd[parseInt(now.wind_mph/10)]
-                // dir
             );
             
             console.time().tag('fetchWUG.conditions').log(
