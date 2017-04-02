@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://github.com/markdowncss/modest/blob/master/css/air.css"></link>  
+
 # 7-Segment LED Clock and Weather Display  
-<img src="img/edison-wug.jpg" width="50%">  
+<img src="img/edison-wug-front.JPG" width="20%">  
   
 ## Programmed with  
 [<img src="img/node-js.png" width="10%">](https://nodejs.org/en/)  
@@ -48,8 +49,8 @@
 [Adafruit 12 VDC 1000mA regulated switching power adapter - UL listed](https://www.adafruit.com/product/798)  
 
 Wiring Diagram [PDF](doc/wiring-diagram.pdf)  
-
 <img src="doc/wiring-diagram.png" width="80%">  
+<img src="img/edison-wug-back.JPG" width="50%">  
 
 ## Useful links
 [Intel Edison Wiki](https://github.com/bethanysciences/Intel-Edison/wiki/setup)  
