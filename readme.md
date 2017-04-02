@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://github.com/markdowncss/modest/blob/master/css/air.css"></link>  
-
+  
 # 7-Segment LED Clock and Weather Display  
 <img src="img/edison-wug-front.JPG" width="20%">  
   
@@ -8,9 +8,9 @@
 [<img src="img/johnny-five.png" width="10%">](http://johnny-five.io/)  
 [<img src="img/intel-xdk.png" width="10%">](https://software.intel.com/en-us/intel-xdk)  
   
-## Materials
-8" x 10" Frame
-Smoke Plexiglass
+## Materials  
+8" x 10" Frame  
+Smoke Plexiglass  
 [Intel Edison Compute Module](datasheets/Intel-Edison-Compute-Module.pdf)<img src="img/edison.png" width="20%">  
 [Intel Mini-Breakout Board](datasheets/Intel-Edison-Mini-Breakout.pdf)<img src="img/edison-breakout.png" width="20%">  
 [2 - Adafruit Blue 0.56" HT16K33 4-digit 7-segment displays](https://www.adafruit.com/product/881)  
@@ -21,9 +21,8 @@ Smoke Plexiglass
 [Sure Electronics DE-DP002 1.8" Red 7-segment display](http://www.ebay.com/itm/160882858719)  
 [Adafruit HT16K33 I2C Backpack Datasheet](datasheets/adafruitHT16K33backpack.pdf)  
 [Adafruit 4-ch Logic Level Converter (BSS138 FETs w/ 10K pullups](https://www.adafruit.com/products/757)  
-[BSS138 FET Datasheet](datasheets/BSS138.pdf)
+[BSS138 FET Datasheet](datasheets/BSS138.pdf)  
 [Adafruit 12 VDC 1000mA regulated switching power adapter - UL listed](https://www.adafruit.com/product/798)  
-  
   
 ## Required node.js modules  
 + [johnny-five](https://github.com/rwaldron/johnny-five)  
@@ -53,13 +52,12 @@ Smoke Plexiglass
 |      |                |High Temp Yel 4-Digit    |  
 |	   |				|Low Temp Blue 4-Digit    |  
 |      |                |Conditions Red Matrix    |  
-| ---- | -------------- | ----------------------- |  
   
 Wiring Diagram [PDF](doc/wiring-diagram.pdf)  
 <img src="doc/wiring-diagram.png" width="80%">  
 <img src="img/edison-wug-back.JPG" width="50%">  
-
-## Useful links
+  
+## Useful links  
 [Intel Edison Wiki](https://github.com/bethanysciences/Intel-Edison/wiki/setup)  
 [Weather Underground Developer API](https://www.wunderground.com/weather/api)  
 [Weather Underground Glossary of response variables](https://www.wunderground.com/weather/api/d/docs?d=resources/phrase-glossary)  
